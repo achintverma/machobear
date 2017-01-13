@@ -1,0 +1,86 @@
+@import '../../css/palatte';
+
+.work{
+	width: 33.33%;
+	position: relative;
+
+	img{
+		width: 100%;
+	}
+
+	.work-overlay{
+		display: flex;
+		position: absolute;
+		opacity: 0;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.5);
+		text-align: center;
+		color: $light;
+		padding: 40px;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+		transition: 0.5s opacity ease;
+
+		h5{
+			font-size: 18px;
+			text-transform: uppercase;
+			margin-bottom: 10px;
+			font-weight: 400;
+			letter-spacing: 3px;
+		}
+
+		p{
+			font-size: 16px;
+			line-height: 1.6;
+			font-weight: 300;
+		}
+	}
+}
+
+.work:hover{
+	.work-overlay{
+		opacity: 2;
+	}
+}
+
+@media only screen and (max-width:768px){
+	.work{
+		width: 50%;
+	
+		.work-overlay{
+			padding: 20px;
+			
+			h5{
+				font-size: 16px;
+				letter-spacing: 2px;
+			}
+
+			p{
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width:480px){
+	.work{
+	
+		.work-overlay{
+			padding: 20px;
+			
+			h5{
+				font-size: 14px;
+				letter-spacing: 2px;
+			}
+
+			p{
+				font-size: 12px;
+			}
+		}
+	}
+}

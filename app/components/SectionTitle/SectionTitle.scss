@@ -1,0 +1,23 @@
+@import '../../css/palatte';
+
+.section-title{
+
+	height: 120px;
+	text-align: center;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+
+	h1{
+		margin: 0px;
+		font-size: 36px;
+		color: $dark;
+		font-weight: 400;
+	}
+
+	span{
+		font-size: 14px;
+		color: #999;
+	}
+}

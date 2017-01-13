@@ -1,0 +1,53 @@
+@import '../../css/palatte';
+
+.about{
+	background-color: #0889FF;
+	width: 50%;
+	height:600px;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	text-align:center;
+	padding: 5%;
+
+	h1{
+		font-size: 42px;
+		font-weight: 400;
+		color:$light;
+	}
+
+	p{
+		font-size: 16px;
+		line-height: 1.5;
+		font-weight: 300;
+		color:$light;
+		letter-spacing: 1px;
+		margin-bottom: 50px;
+	}
+
+	.contact-cta{
+		background: none;
+		color: $light;
+		border: 1px solid $light;
+		padding: 12px 50px;
+		border-radius: 30px;
+		font-size:1em;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-weight: 300;
+		transition: 0.5s background-color ease;
+	}
+
+	.contact-cta:hover{
+		background-color: $light;
+		color: $accent-color;
+	}
+}
+
+@media only screen and (max-width: 480px){
+	.about{
+		width: 100%;
+		padding: 20px;
+	}
+}

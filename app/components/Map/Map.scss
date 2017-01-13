@@ -1,0 +1,13 @@
+@import '../../css/palatte';
+
+.map-box{
+	width: 50%;
+	height: 600px;
+	background-color: #eee;
+}
+
+@media only screen and (max-width: 480px){
+	.map-box{
+		width: 100%;
+	}
+}

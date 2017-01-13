@@ -1,0 +1,83 @@
+@import '../../css/palatte';
+
+footer{
+	background-color: $dark;
+	padding-bottom: 50px;
+
+	h3{
+		font-size: 20px;
+		color: $light;
+		letter-spacing: 3px;
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+		font-weight: 300;
+		border-bottom: 1px solid #464646;
+	}
+
+	.footer-nav{ 
+		list-style: none;
+		padding-left: 0px;
+
+		li{
+			display: inline-block;
+			padding: 0px 20px;
+			a{
+				color: #b2b2b2;
+				font-size: 12px;
+				font-weight: 300;
+				text-decoration: none;
+				transition: 0.5s color ease;
+			}
+
+			a:hover{
+				color: $light;
+			}
+		}
+
+		li:first-of-type{
+			padding-left: 0px;
+		}
+	}
+
+	.footer-social{
+		list-style: none;
+		padding-left: 0px;
+		float: right;
+		
+		li{
+			display: inline-block;
+			padding: 0px 20px;
+
+			a{
+				text-decoration: none;
+			}
+		}
+
+		li:last-of-type{
+			padding-right: 0px;
+		}
+	}
+}
+
+
+@media only screen and (max-width: 480px){
+	footer{
+		.footer-nav{
+			li{
+				padding: 0px 10px;
+			}
+		}
+
+		.footer-social{
+			float: none;
+			margin-top: 20px;
+
+			li:first-of-type{
+				padding-left: 0px;
+			}
+			li:last-of-type{
+				padding-right: 20px;
+			}
+		}
+	}
+}

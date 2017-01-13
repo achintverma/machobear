@@ -1,0 +1,74 @@
+@import '../../css/palatte';
+
+#slide-carousel{
+	.owl-nav{
+		top: 45% !important;
+	}
+}
+
+.slide{
+	height:500px;
+	background-color:#eee;
+	position:relative;
+	background-size: cover;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: center;
+
+	.slide-content{
+		text-align: center;
+		display: inline-block;
+		width: 40%;
+
+		h3{
+			font-size: 36px;
+			color: $light;
+			font-weight: 500;
+		}
+
+		p{
+			font-size: 17px;
+			line-height: 1.5;
+			font-weight: 300;
+			color: $light;
+			letter-spacing: 1px;
+			margin-bottom:50px;
+		}
+
+		.slide-cta{
+			background: rgba(255,255,255,0.4);
+			color: #fff;
+		    font-weight: 600;
+		    padding: 10px 50px;
+		    border-radius: 20px;
+		    text-transform: uppercase;
+		    font-size: 1em;
+		    letter-spacing: 2px;
+		    transition: 1s background ease;
+		    transition: 1s color ease;
+		}
+
+		.slide-cta:hover{
+			background: rgba(255,255,255,0.6);
+			color: $accent-color;
+		}
+
+	}
+}
+
+@media only screen and (max-width: 900px){
+	.slide{
+		.slide-content{
+			width: 60%;
+		}
+	}
+}
+
+@media only screen and (max-width: 764px){
+	.slide{
+		.slide-content{
+			width: 80%;
+		}
+	}
+}

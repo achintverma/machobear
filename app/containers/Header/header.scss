@@ -1,0 +1,145 @@
+@import '../../css/palatte';
+
+header{
+	height: 130px;
+	background-color: $light;
+	padding: 40px 0px;
+
+	.logo{
+		font-size: 24px;
+		color: $dark;
+		text-transform: uppercase;
+		font-weight: 300;
+		line-height: 50px;
+		letter-spacing: 4px;
+	}
+
+	.nav{
+		margin-top: 4.5px; /* fix to adjust menu height to perfectly center it vertically*/
+
+	}
+
+	.logo-container{
+		text-align: left;
+	}
+
+	.nav-alignment{
+		float: right;
+	}
+
+	.nav-pills{
+		li{
+			a{
+				padding: 12px 15px;
+				border-radius: 20px;
+				text-transform: uppercase;
+				font-size: 1em;
+				letter-spacing: 2px;
+				margin:0px 20px;
+				border: 1px solid $light;
+				transition: 0.5s border ease;
+			}
+
+			a:hover, a:focus{
+				color: $dark;
+			    text-decoration: none;
+			    border: 1px solid $accent-color;
+			    background-color: $light;
+			}
+		}
+
+		li.active{
+			a, a:hover, a:focus{
+			background-color: $light;
+			color: $accent-color;
+			font-weight: 700;
+			}
+		}
+	}
+
+	
+}
+
+/* CSS for iPad View */
+@media only screen and (max-width: 900px) {
+	header{
+		height: auto;
+		padding: 20px 0px;
+
+		.logo-container{
+			text-align: center;
+		}
+
+		.nav-container{
+			text-align: center;
+		}
+		.nav-alignment{
+			display: inline-block;
+			float: none;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.nav-pills{
+			li{
+				a{
+					margin:0px 5px;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 990px) {
+	header{
+		.nav-pills{
+			li{
+				a{
+					margin:0px 5px;
+				}
+			}
+		}
+	}
+}
+
+
+@media only screen and (max-width: 480px){
+	header{
+		.nav-pills{
+			li{
+				a{
+					padding: 10px 3px;
+					font-size: 0.9em;
+					margin:0px 4px;
+				}
+
+				a:hover, a:focus{
+				    border: none;
+				    background-color: $light;
+				}
+			}
+
+			li.active{
+				a, a:hover, a:focus{
+				background-color: $light;
+				color: $accent-color;
+				font-weight: 700;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 360px){
+	header{
+		.nav-pills{
+			li{
+				a{
+					padding: 10px 2px;
+					font-size: 0.8em;
+					margin:0px 3px;
+				}
+			}
+		}
+	}
+}

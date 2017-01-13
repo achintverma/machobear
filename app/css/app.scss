@@ -1,0 +1,23 @@
+@import 'palatte';
+
+body{
+	font-family: $font-group;
+	font-size: 1.1em;
+	color: $color;
+	background-color: #eee;
+}
+
+a{
+	color: #333;
+}
+
+a:hover{
+	color: $accent-color;
+}
+
+h1{
+	font-size: 18px;
+	font-weight: bold;
+	color: $color; 
+	margin: 20px auto;
+}
